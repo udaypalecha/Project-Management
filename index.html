@@ -10,6 +10,7 @@
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
   <link href="./css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap core CSS -->
   <link href="./css/projlist.css" rel="stylesheet"> <!-- Custom styles for this template -->
+  <link href="./css/bootstrap-icons.css" rel="stylesheet"> <!-- Custom styles for this template -->
   <link href="./css/styles.css" rel="stylesheet"> <!-- My CSS styles -->
 
   <title>New Project List</title>
@@ -19,12 +20,6 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-          data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <i class="bi bi-cart3"></i>
-        </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <a class="me-4" href="#">
             <img class="logo" src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" alt="MDB Logo">
@@ -47,30 +42,23 @@
             <i class="bi bi-cart3"></i>
           </a>
 
-          <div class="dropdown">
-            <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
-              data-mdb-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-bell"></i>
-              <span class="badge rounded-pill bg-danger">1</span>
+          <div class="dropdown">  <!--Notification Bell-->
+            <a class="text-reset me-3 btn" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-bell me-0"></i>
+              <span class="position-absolute top-0 translate-middle-x badge rounded-pill bg-danger">
+                9+ <span class="visually-hidden">unread messages</span>
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-              <li>
-                <a class="dropdown-item" href="#">Some news</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Another news</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Some news</a></li>
+              <li><a class="dropdown-item" href="#">Another news</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </div>
-          <!-- Avatar -->
-          <div class="dropdown">
-            <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar"
-              role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25"
-                alt="Black and White Portrait of a Man" loading="lazy" />
+
+          <div class="dropdown">  <!-- Avatar -->
+            <a class="d-flex align-items-center" href="#" id="navbarDropdownMenuAvatar"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://media.licdn.com/dms/image/C4D03AQFWCZFa_9oFcw/profile-displayphoto-shrink_800_800/0/1667961995806?e=2147483647&v=beta&t=pPdwZc1xQ1ITqSABPvOAJ5_ah7ZOg8l70IRODjE7qmY" class="rounded-circle" height="26" alt="Profile Picture" loading="lazy"/>
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
               <li>
@@ -94,8 +82,8 @@
       <div class="position-sticky pt-3">
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
-              <span data-feather="home"></span>
+            <a class="nav-link" aria-current="page" href="#">
+              <i class="bi bi-list-nested"></i>
               Project List
             </a>
           </li>
@@ -132,11 +120,12 @@
         </ul>
     
         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-          <span>Saved reports</span>
+          <span>Saved Reports</span>
           <a class="link-secondary" href="#" aria-label="Add a new report">
             <span data-feather="plus-circle"></span>
           </a>
         </h6>
+
         <ul class="nav flex-column mb-2">
           <li class="nav-item">
             <a class="nav-link" href="#">
@@ -165,10 +154,10 @@
         </ul>
       </div>
     </nav>
+
     <div class="row">
       <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-        <div
-          class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
           <h1 class="h2">Project List</h1>
           <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group me-2">
@@ -197,58 +186,58 @@
               <tr>
                 <td>1000</td>
                 <td>Project Name - Small Description</td>
-                <td><i class="bi bi-circle-fill"></i>&nbsp&nbsp New</td>
+                <td><i class="bi bi-circle-fill new"></i> New</td>
                 <td>Amanjot Singh</td>
-                <td><i class="bi bi-circle-fill"></i>&nbsp&nbsp High</td>
+                <td><i class="bi bi-circle-fill p-high"></i> High</td>
               </tr>
               <tr>
                 <td>1002</td>
                 <td>Project Name - Small Description</td>
-                <td><i class="bi bi-circle-fill"></i>&nbsp&nbsp Scheduled</td>
+                <td><i class="bi bi-circle-fill scheduled"></i> Scheduled</td>
                 <td>Kshitij</td>
-                <td><i class="bi bi-circle-fill"></i>&nbsp&nbsp High</td>
+                <td><i class="bi bi-circle-fill p-high"></i> High</td>
               </tr>
               <tr>
                 <td>1002</td>
                 <td>Project Name - Small Description</td>
-                <td><i class="bi bi-circle-fill"></i>&nbsp&nbsp In Progress</td>
+                <td><i class="bi bi-circle-fill in-progress"></i> In Progress</td>
                 <td>Vaibhav</td>
-                <td><i class="bi bi-circle-fill"></i>&nbsp&nbsp Normal</td>
+                <td><i class="bi bi-circle-fill p-normal"></i> Normal</td>
               </tr>
               <tr>
                 <td>1003</td>
                 <td>Project Name - Small Description</td>
-                <td><i class="bi bi-circle-fill"></i>&nbsp&nbsp Completed</td>
+                <td><i class="bi bi-circle-fill completed"></i> Completed</td>
                 <td>Jyoti</td>
-                <td><i class="bi bi-circle-fill"></i>&nbsp&nbsp Normal</td>
+                <td><i class="bi bi-circle-fill p-normal"></i> Normal</td>
               </tr>
               <tr>
                 <td>1004</td>
                 <td>Project Name - Small Description</td>
-                <td><i class="bi bi-circle-fill"></i>&nbsp&nbsp Scheduled</td>
+                <td><i class="bi bi-circle-fill scheduled"></i> Scheduled</td>
                 <td>Nitin</td>
-                <td><i class="bi bi-circle-fill"></i>&nbsp&nbsp Normal</td>
+                <td><i class="bi bi-circle-fill p-normal"></i> Normal</td>
               </tr>
               <tr>
                 <td>1005</td>
                 <td>Project Name - Small Description</td>
-                <td><i class="bi bi-circle-fill"></i>&nbsp&nbsp New</td>
+                <td><i class="bi bi-circle-fill new"></i> New</td>
                 <td>Yogesh</td>
-                <td><i class="bi bi-circle-fill"></i>&nbsp&nbsp Normal</td>
+                <td><i class="bi bi-circle-fill p-normal"></i> Normal</td>
               </tr>
               <tr>
                 <td>1006</td>
                 <td>Project Name - Small Description</td>
-                <td><i class="bi bi-circle-fill"></i>&nbsp&nbsp In Progress</td>
+                <td><i class="bi bi-circle-fill in-progress"></i> In Progress</td>
                 <td>Shreya</td>
-                <td><i class="bi bi-circle-fill"></i>&nbsp&nbsp Low</td>
+                <td><i class="bi bi-circle-fill p-low"></i> Low</td>
               </tr>
               <tr>
                 <td>1007</td>
                 <td>Project Name - Small Description</td>
-                <td><i class="bi bi-circle-fill"></i>&nbsp&nbsp In Progress</td>
+                <td><i class="bi bi-circle-fill in-progress"></i> In Progress</td>
                 <td>Adish Jain</td>
-                <td><i class="bi bi-circle-fill"></i>&nbsp&nbsp Low</td>
+                <td><i class="bi bi-circle-fill p-low"></i> Low</td>
               </tr>
             </tbody>
           </table>
