@@ -1,7 +1,14 @@
 .bi {
   margin-right: 0.25rem;
   font-size: 1.25rem;
-  vertical-align: middle;
+  color: #727272;
+  vertical-align: sub;
+}
+
+.bi-star-fill {
+  font-size: .9rem;
+  vertical-align: text-top;
+  color: #ffcc27;
 }
 
 .bi.bi-circle-fill{
