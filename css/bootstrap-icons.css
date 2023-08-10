@@ -11,9 +11,20 @@
   color: #ffcc27;
 }
 
+#filter-btn {
+  padding-top: .125rem;
+  padding-bottom: .125rem;
+}
+
+.bi.social-icons {
+  margin: 0;
+  color: white;
+}
+
 .bi.bi-circle-fill{
   font-size: 0.75rem;
   margin-right: 0.25rem;
+  vertical-align: initial;
 }
 
 .bi.bi-circle-fill.completed, .p-normal {
