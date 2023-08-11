@@ -635,13 +635,7 @@ progress {
   color: #6c757d
 }
 
-.container,
-.container-fluid,
-.container-lg,
-.container-md,
-.container-sm,
-.container-xl,
-.container-xxl {
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
   width: 100%;
   padding-right: var(--bs-gutter-x, .75rem);
   padding-left: var(--bs-gutter-x, .75rem);
@@ -11739,12 +11733,13 @@ html {overscroll-behavior-y: none;}  /* Overscroll Prevention */
 body {
   padding-top: 5rem;
   padding-bottom: 1rem;
+  min-height: 100vh;
 }
-@media (max-width: 979px) {
+/* @media (max-width: 979px) {
   body {
     padding-top: 0px;
   }
-}
+} */
 
 .table>thead {
   font-variant: small-caps;
@@ -11767,7 +11762,19 @@ tbody, td, tfoot, th, thead, tr {
 
 .navbar {
   z-index: 100;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin-bottom: 0;
 }
+.navbar>.nav-item>.nav-link {
+  padding: .5rem .5rem;
+  color: rgba(0, 0, 0, .7);
+}
+.navbar>.nav-item>.nav-link:hover {
+  color: rgba(0, 0, 0, .9);
+}
+
 
 .logo {
   padding-bottom: .13rem;
