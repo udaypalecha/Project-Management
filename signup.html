@@ -10,7 +10,7 @@
   <link rel=" stylesheet" href="./css/projlist.css"> <!-- Custom styles for this template -->
   <link rel=" stylesheet" href="./css/bootstrap-icons.css"> <!-- Custom styles for this template -->
   <link rel=" stylesheet" href="./css/login.css">
-  <title>Login</title>
+  <title>Create Account</title>
 </head>
 
 <body>
@@ -79,13 +79,13 @@
       <div class="container-fluid h-custom">
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col-5">
-            <img src="assets\img\login.webp" class="img-fluid" alt="Sample image">
+            <img src=".\assets\img\signup.png" class="img-fluid" alt="Sample image">
           </div>
 
-          <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4  offset-xl-1">
+          <div class="col-sm-6 col-md-6 col-lg-5 col-xl-5 offset-xl-1">
             <form>
               <div class="d-flex flex-row align-items-center justify-content-center">
-                <p class="lead fw-normal mb-0 me-2">Login with:</p>
+                <p class="lead fw-normal mb-0 me-2">Create Account with:</p>
                 <button type="button" class="btn btn-primary me-2 social-btn">
                   <i class="bi bi-facebook social-icons"></i>
                 </button>
@@ -96,25 +96,68 @@
                   <i class="bi bi-linkedin social-icons"></i>
                 </button>
               </div>
-
+              
               <div class="divider d-flex align-items-center my-4">
                 <p class="text-center fw-bold mx-3 mb-0">Or</p>
               </div>
 
-              <!-- Email input -->
-              <div class="form-outline mb-4">
-                <input type="email" id="form3Example3" class="form-control form-control-lg" placeholder="email@example.com">
-                <label class="form-label" for="form3Example3">Email address</label>
-              <div class="form-notch"><div class="form-notch-leading"></div><div class="form-notch-middle" style="width: 88.8px;"></div><div class="form-notch-trailing"></div></div></div>
+              <div class="form-outline mb-3 d-flex gap-3">    <!-- Name -->
+                <div class="form-outline mb-3">  <!-- First Name -->
+                  <input type="text" class="form-control form-control-lg" placeholder="">
+                  <label class="form-label" for="form3Example3">First Name</label>
+                <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 88.8px;"></div><div class="form-notch-trailing"></div></div></div>
+                <div class="form-outline mb-3">  <!-- Last Name -->
+                  <input type="text" class="form-control form-control-lg" placeholder="">
+                  <label class="form-label" for="form3Example3">Last Name</label>
+                <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 88.8px;"></div><div class="form-notch-trailing"></div></div></div>
+              </div>
 
-              <!-- Password input -->
-              <div class="form-outline mb-3">
-                <input type="password" id="form3Example4" class="form-control form-control-lg" placeholder="Enter password">
-                <label class="form-label" for="form3Example4">Password</label>
-              <div class="form-notch"><div class="form-notch-leading"></div><div class="form-notch-middle" style="width: 64.8px;"></div><div class="form-notch-trailing"></div></div></div>
+              <div class="form-outline mb-3 d-flex gap-3">   <!-- Username & Email -->
+                <div class="form-outline mb-3"> <!-- Username -->
+                  <input type="text" class="form-control form-control-lg" placeholder="">
+                  <label class="form-label" for="form3Example3">Username</label>
+                  <div class="form-notch">
+                    <div class="form-notch-leading" style="width: 9px;"></div>
+                    <div class="form-notch-middle" style="width: 88.8px;"></div>
+                    <div class="form-notch-trailing"></div>
+                  </div>
+                </div>
+              
+                <div class="form-outline mb-3"> <!-- Email input -->
+                  <input type="email" class="form-control form-control-lg" placeholder="email@example.com">
+                  <label class="form-label" for="form3Example3">Email address</label>
+                  <div class="form-notch">
+                    <div class="form-notch-leading" style="width: 9px;"></div>
+                    <div class="form-notch-middle" style="width: 88.8px;"></div>
+                    <div class="form-notch-trailing"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-outline mb-3 d-flex gap-3">   <!-- Password -->
+                <div class="form-outline mb-3"> <!-- Password input -->
+                  <input type="password" id="form3Example4" class="form-control form-control-lg" placeholder="Enter password">
+                  <label class="form-label" for="form3Example4">Password</label>
+                  <div class="form-notch">
+                    <div class="form-notch-leading" style="width: 9px;"></div>
+                    <div class="form-notch-middle" style="width: 64.8px;"></div>
+                    <div class="form-notch-trailing"></div>
+                  </div>
+                </div>
+              
+                <div class="form-outline mb-3"> <!-- Confirm Password -->
+                  <input type="password" id="form3Example4" class="form-control form-control-lg" placeholder="Enter same password">
+                  <label class="form-label" for="form3Example4">Confirm Password</label>
+                  <div class="form-notch">
+                    <div class="form-notch-leading" style="width: 9px;"></div>
+                    <div class="form-notch-middle" style="width: 64.8px;"></div>
+                    <div class="form-notch-trailing"></div>
+                  </div>
+                </div>
+              </div>
 
               <!-- Checkbox & Forgot Password -->
-              <div class="d-flex justify-content-between align-items-center flex-wrap">
+              <div class="d-flex justify-content-between align-items-center">
                 <div class="form-check mb-0">
                   <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
                   <label class="form-check-label" for="form2Example3">
@@ -126,10 +169,10 @@
               
               <!-- Login & Register -->
               <div class="text-center mt-4 pt-2">
-                <button type="button" class="btn btn-primary" style="padding-left: 2.5rem; padding-right: 2.5rem;"> Login</button>
+                <button type="button" class="btn btn-primary" style="padding-left: 2.5rem; padding-right: 2.5rem;"> Register</button>
                 <p class="small mt-2 pt-1 mb-0">
-                  Don't have an account? 
-                  <a href="#!" class="link-danger fw-bold">Register</a>
+                  Already have an account? 
+                  <a href="./signin.html" class="link-danger fw-bold">Login</a>
                 </p>
               </div>
             </form>
