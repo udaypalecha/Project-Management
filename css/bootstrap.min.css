@@ -11733,7 +11733,6 @@ html {overscroll-behavior-y: none;}  /* Overscroll Prevention */
 body {
   padding-top: 5rem;
   padding-bottom: 1rem;
-  min-height: 100vh;
 }
 /* @media (max-width: 979px) {
   body {
@@ -11766,6 +11765,7 @@ tbody, td, tfoot, th, thead, tr {
   display: flex;
   padding: 0;
   margin-bottom: 0;
+  flex-wrap: nowrap;
 }
 .navbar>.nav-item>.nav-link {
   padding: .5rem .5rem;
