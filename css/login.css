@@ -11,18 +11,18 @@ a {
 
 .social-btn {
   border-radius: 50%;
-  border: 2px inset #3385ff;
-  background-color: transparent;
+  border: 2px inset #3385ff !important;
+  background-color: transparent !important;
   padding: 2px 8px;  /*6,12 9,15 30 36 */
 }
 .social-btn:enabled {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 .social-btn:hover {
-  background-color: #ebfeff;
+  background-color: #ebfeff !important;
 }
 .social-btn:active {
-  background-color: #cbfdff;
+  background-color: #cbfdff !important;
 }
 
 html {
