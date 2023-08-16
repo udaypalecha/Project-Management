@@ -5,6 +5,12 @@
   vertical-align: sub;
 }
 
+.btn .bi {
+  font-size: 1rem;
+  vertical-align: baseline;
+  color: inherit;
+}
+
 .bi-star-fill {
   font-size: .9rem;
   vertical-align: text-top;
