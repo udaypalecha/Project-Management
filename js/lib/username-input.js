@@ -55,7 +55,7 @@ lib.userInput = (function(utils) {
   function init(inputContainerNode, options) {
     inputContainerNode.innerHTML = ' \
       <div class="userNames userSearch"> \
-        <input class="form-control me-1" type="search" role="userSearch" placeholder="' + options.placeholder + '"> \
+        <input class="form-control me-1 mb-1" type="search" role="userSearch" style="width: 252px;" placeholder="' + options.placeholder + '"> \
       </div> \
     '
   }
