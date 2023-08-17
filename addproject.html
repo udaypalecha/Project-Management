@@ -176,7 +176,7 @@
             <i style="font-size: 0.9rem;">Required fields are marked with an asterisk (*)</i>
             <div class="col-auto">
               <label for="owner" class="form-label">Owner<span class="required">*</span></label>
-              <div class="form-control btn btn-light border-dark-subtle d-flex align-items-center gap-2">
+              <div class="btn btn-light border-dark-subtle d-flex align-items-center gap-2">
                 <img src="https://media.licdn.com/dms/image/C4D03AQFWCZFa_9oFcw/profile-displayphoto-shrink_800_800/0/1667961995806?e=2147483647&v=beta&t=pPdwZc1xQ1ITqSABPvOAJ5_ah7ZOg8l70IRODjE7qmY" class="rounded-circle" height="24" width="24" alt="Profile Picture" loading="lazy"/>
                 <span class="username">udaypalecha</span>
               </div>
@@ -187,7 +187,7 @@
             </div>
             <div class="col-sm-4">
               <label for="projectName" class="form-label">Project Name<span class="required">*</span></label>
-              <input type="text" class="form-control" id="projectName" placeholder="" value="" required>
+              <input type="text" class="form-control projectName" placeholder="" value="" required>
               <div class="invalid-feedback">
                 Please provide a project name.
               </div>
@@ -195,7 +195,7 @@
   
             <div class="col-10">
               <label for="description" class="form-label">Description<span class="text-body-secondary"> (Optional)</span></label>
-              <textarea type="text" class="form-control" id="description" placeholder="About your project"></textarea>
+              <textarea type="text" class="form-control description" placeholder="About your project"></textarea>
             </div>
             
             <div class="col-auto">
@@ -233,15 +233,20 @@
               </select>
             </div>
 
-            <hr class="mb-0 invisible">
-
-            <div class="col-md-3">
-              <label for="startdate" class="form-label">Project Start Date<span class="required">*</span></label>
-              <input type="date" class="form-control" id="startdate" placeholder="" required>
+            <div class="row g-3 pb-3">
+              <div class="col-md-3">
+                <label for="startdate" class="form-label">Project Start Date<span class="required">*</span></label>
+                <input type="date" class="form-control" id="startdate" placeholder="" required>
+              </div>
+              <div class="col-md-3">
+                <label for="deadline" class="form-label">Estimated Deadline<span class="required">*</span></label>
+                <input type="date" class="form-control" id="deadline" placeholder="" required>
+              </div>
             </div>
-            <div class="col-md-3">
-              <label for="deadline" class="form-label">Estimated Deadline<span class="required">*</span></label>
-              <input type="date" class="form-control" id="deadline" placeholder="" required>
+
+            <div class="col-sm-6">
+              <label for="projectLink" class="form-label">Project Link<span class="text-body-secondary"> (Optional)</span></label></label>
+              <input type="url" class="form-control projectLink" placeholder="https://www.example.com/user/project-name/assets" value="" required>
             </div>
           </div>
 
