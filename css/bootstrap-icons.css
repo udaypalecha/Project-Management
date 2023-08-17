@@ -5,9 +5,9 @@
   vertical-align: sub;
 }
 
-.btn .bi {
+.bi-plus-circle {
   font-size: 1rem;
-  vertical-align: baseline;
+  vertical-align: initial;
   color: inherit;
 }
 
@@ -30,19 +30,20 @@
 
 .bi.bi-circle-fill{
   font-size: 0.75rem;
-  margin-right: 0.25rem;
   vertical-align: initial;
 }
-
-.bi.bi-circle-fill.completed, .p-normal {
+.priority.urgent .bi.bi-circle-fill {
+  color: #f00;
+}
+.status.completed .bi.bi-circle-fill, .priority.normal .bi.bi-circle-fill{
   color: #7CFC00;
 }
-.bi.bi-circle-fill.new, .p-high {
+.status.new .bi.bi-circle-fill, .priority.high .bi.bi-circle-fill{
   color: #ffa500;
 }
-.bi.bi-circle-fill.scheduled {
+.status.scheduled .bi.bi-circle-fill {
   color: #d703fc;
 }
-.bi.bi-circle-fill.in-progress, .p-low {
+.status.in-progress .bi.bi-circle-fill, .priority.low .bi.bi-circle-fill{
   color: #03e7fc;
 }
