@@ -15,9 +15,6 @@ a {
   background-color: transparent !important;
   padding: 2px 8px;  /*6,12 9,15 30 36 */
 }
-.social-btn:enabled {
-  background-color: transparent !important;
-}
 .social-btn:hover {
   background-color: #ebfeff !important;
 }
