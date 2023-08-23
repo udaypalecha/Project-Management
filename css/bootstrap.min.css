@@ -210,18 +210,7 @@ hr {
   opacity: .25
 }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: .5rem;
   font-weight: 500;
@@ -519,6 +508,7 @@ select:disabled {
 [type=reset],
 [type=submit],
 button {
+  appearance: button;
   -webkit-appearance: button
 }
 
@@ -579,6 +569,7 @@ legend+* {
 }
 
 [type=search] {
+  appearance: textfield;
   -webkit-appearance: textfield;
   outline-offset: -2px
 }
@@ -598,6 +589,7 @@ legend+* {
 
 ::file-selector-button {
   font: inherit;
+  appearance: button;
   -webkit-appearance: button
 }
 
@@ -13897,11 +13889,6 @@ body {
   padding-top: 5rem;
   padding-bottom: 1rem;
 }
-/* @media (max-width: 979px) {
-  body {
-    padding-top: 0px;
-  }
-} */
 
 .h1,h1 {
   font-variant: small-caps;
@@ -13922,26 +13909,17 @@ body {
     font-variant: small-caps;
     font-weight: 600;
   }
-}
-
-.shadow {
-  box-shadow: 0 0 1rem rgba(0, 0, 0, .15) !important
 }
 
 .table>thead {
   font-variant: small-caps;
   font-size: 1.15rem;
 }
-
-tbody, td, tfoot, th, thead, tr {
-  border-color: #dce0e4 !important;
-  border-style: solid;
-  border-width: 0;
-}
-
 .table-l>:not(caption)>*>* {
   padding: 0.75rem 0.75rem;
 }
+td {white-space: nowrap;}
+table .taskName, table .projectName {white-space: initial;}
 
 .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
   padding-right: 1.5rem;
@@ -13963,7 +13941,6 @@ tbody, td, tfoot, th, thead, tr {
   color: rgba(0, 0, 0, .9);
 }
 
-
 .logo {
   padding-bottom: .13rem;
   max-height: 1.5rem;
@@ -13976,25 +13953,54 @@ tbody, td, tfoot, th, thead, tr {
   margin-top: -0.1rem;
   margin-left: -0.5rem;
 }
-
-[class*="btn"] {
-  box-shadow: none !important;
-  outline: none !important;
-}
-
-.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active, .btn:hover {
-  border-color: transparent;
-}
-
 .badge {
   font-size: 0.5rem;
-  left: 55% !important
+  left: 55% !important;
 }
 
-[class^="form-"] {
+.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active, .btn:hover { border-color: transparent; }
+[class*="btn"], [class^="form-"] {
   box-shadow: none !important;
   outline: none !important;
-  border-color: var(--bs-secondary-border-subtle)
+}
+[class^="form-"] { border-color: var(--bs-secondary-border-subtle); }
+.shadow {box-shadow: 0 0 1rem rgba(0, 0, 0, .15) !important}
+
+img{ font-size: 0; }
+
+[contenteditable]:hover {
+  cursor: pointer;
+  background-color: #091e420f;
+  border-bottom-left-radius: 0.5rem;
+}
+[contenteditable]:focus {
+  outline: 0;
+  box-shadow: 0 2px 2px #dadce0, 0 1px 0 1px rgba(60,64,67,.15); /* inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0, 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15); */
+  background-color: #091e420f;
+  border-bottom-left-radius: 0.5rem;
+  cursor: text;
 }
 
+.card-title {
+  margin-bottom: 0;
+  border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+}
+.card-body {padding-bottom: 0;}
+
+.taskForm {
+  display: none;
+  overflow-x: scroll;
+}
+.taskForm .taskAssignee {
+  flex: 0;
+  width: 11.875rem;
+  height: 38px;
+}
+.taskForm .taskStatus {
+  flex: 1 1 9.75rem;
+  min-width: fit-content;
+  height: 38px;
+}
+.taskName {width: 60%;
+min-width: 6.5rem;}
 /*# sourceMappingURL=bootstrap.min.css.map */
