@@ -2,15 +2,7 @@ body {
   font-size: 1rem;
 }
 
-.feather {
-  width: 16px;
-  height: 16px;
-  vertical-align: text-bottom;
-}
-
-/*
- * Sidebar
- */
+/* Sidebar */
 
 .sidebar {
   position: fixed;
@@ -45,11 +37,6 @@ body {
   color: #333;
 }
 
-.sidebar .nav-link .feather {
-  margin-right: 4px;
-  color: #727272;
-}
-
 .sidebar .nav-link.active {
   color: #2470dc;
 }
@@ -64,9 +51,7 @@ body {
   font-variant: small-caps;
 }
 
-/*
- * Navbar
- */
+/* Navbar */
 
 .navbar-brand {
   padding-top: .75rem;
@@ -87,17 +72,6 @@ body {
   border-radius: 0;
 }
 
-.form-control-dark {
-  color: #fff;
-  background-color: rgba(255, 255, 255, .1);
-  border-color: rgba(255, 255, 255, .1);
-}
-
-.form-control-dark:focus {
-  border-color: transparent;
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
-}
-
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
@@ -109,5 +83,4 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
-  padding-right: 0;
 }
