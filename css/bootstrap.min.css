@@ -13918,7 +13918,10 @@ body {
 .table-l>:not(caption)>*>* {
   padding: 0.75rem 0.75rem;
 }
-td {white-space: nowrap;}
+td {
+  white-space: nowrap;
+  vertical-align: middle;
+}
 table .taskName, table .projectName {white-space: initial;}
 
 .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
@@ -13959,11 +13962,11 @@ table .taskName, table .projectName {white-space: initial;}
 }
 
 .btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active, .btn:hover { border-color: transparent; }
-[class*="btn"], [class^="form-"] {
+[class*="btn"], [class*="form-"] {
   box-shadow: none !important;
   outline: none !important;
 }
-[class^="form-"] { border-color: var(--bs-secondary-border-subtle); }
+[class*="form-"] { border-color: var(--bs-secondary-border-subtle); }
 .shadow {box-shadow: 0 0 1rem rgba(0, 0, 0, .15) !important}
 
 img{ font-size: 0; }
@@ -13985,7 +13988,10 @@ img{ font-size: 0; }
   margin-bottom: 0;
   border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
 }
-.card-body {padding-bottom: 0;}
+.card-body {
+  padding-bottom: 0;
+  flex-grow: 0;
+}
 
 .taskForm {
   display: none;

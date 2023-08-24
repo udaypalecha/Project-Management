@@ -1,0 +1,6 @@
+.userAccess div div div, .userAccess .username {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}

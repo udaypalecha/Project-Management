@@ -24,3 +24,13 @@ function addTask(taskName, taskStatus, taskAssignee) {
   tr.scrollIntoView();
   hide('.taskForm');
 }
+
+function addUser(input_username) {
+  let username = document.querySelector(input_username).value;
+  let userprofile = '#';
+  let div = document.createElement('div');
+
+  div.innerHTML = '<div class="d-flex align-items-center py-2 border-bottom"><div class="d-flex gap-2"><img src="./assets/img/person.svg" class="rounded-circle" height="24" width="24" alt="Profile picture" loading="lazy"/><a class="username page-link" href=' + userprofile + '>' + username + '</a></div><i class="bi bi-person-dash"  onclick="this.parentNode.remove();"></i></div>';
+
+  document.querySelector('#accessCol').appendChild(div);
+}
