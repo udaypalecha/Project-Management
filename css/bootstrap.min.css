@@ -2732,8 +2732,8 @@ textarea.form-control-lg {
   background-size: contain;
   border: var(--bs-border-width) solid var(--bs-border-color);
   -webkit-print-color-adjust: exact;
-  color-adjust: exact;
-  print-color-adjust: exact
+  /* color-adjust: exact; */
+  print-color-adjust: exact;
 }
 
 .form-check-input[type=checkbox] {
@@ -13987,15 +13987,12 @@ table .taskName, table .projectName {white-space: initial;}
 
 .card {
   height: fit-content;
+  flex-grow: 1;
 }
 .card-title, .card-header {
   white-space: nowrap;
   overflow: auto;
   margin-bottom: 0;
   border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
-}
-.card-body {
-  /* padding-bottom: 0; */
-  flex-grow: 0;
 }
 /*# sourceMappingURL=bootstrap.min.css.map */
