@@ -13910,19 +13910,7 @@ body {
     font-weight: 600;
   }
 }
-
-.table>thead {
-  font-variant: small-caps;
-  font-size: 1.15rem;
-}
-.table-l>:not(caption)>*>* {
-  padding: 0.75rem 0.75rem;
-}
-td {
-  white-space: nowrap;
-  vertical-align: middle;
-}
-table .taskName, table .projectName {white-space: initial;}
+h6,.h6{font-size: 1.1rem;}
 
 .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
   padding-right: 1.5rem;
@@ -13984,29 +13972,30 @@ img{ font-size: 0; }
   cursor: text;
 }
 
-.card-title {
+.table>thead {
+  font-variant: small-caps;
+  font-size: 1.15rem;
+}
+.table-l>:not(caption)>*>* {
+  padding: 0.75rem 0.75rem;
+}
+td, button {
+  white-space: nowrap;
+  vertical-align: middle;
+}
+table .taskName, table .projectName {white-space: initial;}
+
+.card {
+  height: fit-content;
+}
+.card-title, .card-header {
+  white-space: nowrap;
+  overflow: auto;
   margin-bottom: 0;
   border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
 }
 .card-body {
-  padding-bottom: 0;
+  /* padding-bottom: 0; */
   flex-grow: 0;
 }
-
-.taskForm {
-  display: none;
-  overflow-x: scroll;
-}
-.taskForm .taskAssignee {
-  flex: 0;
-  width: 11.875rem;
-  height: 38px;
-}
-.taskForm .taskStatus {
-  flex: 1 1 9.75rem;
-  min-width: fit-content;
-  height: 38px;
-}
-.taskName {width: 60%;
-min-width: 6.5rem;}
 /*# sourceMappingURL=bootstrap.min.css.map */

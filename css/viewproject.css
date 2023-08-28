@@ -1,6 +1,43 @@
-.userAccess div div div, .userAccess .username {
+.accessColUser div, .userAccess .username {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
 }
+.userAccess {
+  height: fit-content;
+  min-width: 12rem;
+  flex: 0 0 25%;
+}
+@media (max-width:48rem)
+{
+  .userAccess {
+    height: fit-content;
+    min-width: 12rem;
+    flex: 1 0 100%;
+  }
+  section {flex-wrap: wrap;}
+}
+.accessColUser {
+  display: flex;
+  align-items: center;
+  padding: .5rem 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.taskForm {
+  display: none;
+  overflow-x: scroll;
+}
+.taskForm .taskAssignee {
+  flex: 0;
+  width: 11.875rem;
+  height: 38px;
+}
+.taskForm .taskStatus {
+  flex: 1 1 9.75rem;
+  min-width: fit-content;
+  height: 38px;
+}
+.taskName {width: 60%;
+min-width: 6.5rem;}
