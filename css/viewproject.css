@@ -41,3 +41,5 @@
 }
 .taskName {width: 60%;
 min-width: 6.5rem;}
+
+p {flex-grow: 1;}
